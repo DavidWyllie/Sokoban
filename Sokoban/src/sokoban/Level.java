@@ -31,11 +31,11 @@ public class Level extends JComponent {
     
     public Level(int levelNumber)   {
         
-        try {
-            drawLevel(levelNumber);
-        }  catch (FileNotFoundException ex) {
-            System.out.println("Level not found message:" + ex.getMessage());
-        }
+//        try {
+//            drawLevel(levelNumber);
+//        }  catch (FileNotFoundException ex) {
+//            System.out.println("Level not found message:" + ex.getMessage());
+//        }
         
         
     }

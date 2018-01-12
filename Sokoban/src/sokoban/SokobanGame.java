@@ -47,6 +47,7 @@ public class SokobanGame extends JComponent implements ActionListener{
         gameWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         StartScreen();
         
+        
     }
     
     private void StartScreen()  {
@@ -85,11 +86,11 @@ public class SokobanGame extends JComponent implements ActionListener{
         
       public void createUserInterface()   {
         
-        moveNumberLabel  =   new JLabel("Number of Moves" + moveNumber);
+        moveNumberLabel  =   new JLabel("Number of Moves: " + moveNumber);
         add(moveNumberLabel);
         moveNumberLabel.setFont(new Font("Calibri", Font.BOLD, 18));
         moveNumberLabel.setForeground(Color.BLUE);        
-        moveNumberLabel.setBounds(600, 250, 120, 40);
+        moveNumberLabel.setBounds(600, 250, 200, 40);
         moveNumberLabel.setVisible(true);
         
        levelRestartButton  =   new JButton("Restart Level");
@@ -172,7 +173,7 @@ public class SokobanGame extends JComponent implements ActionListener{
             nextLevelButton.setVisible(false);
             levelNumber++;
             moveNumber = 0;
-            moveNumberLabel.setText("Move Number " + moveNumber);
+            moveNumberLabel.setText("Move Number: " + moveNumber);
             startingLevel.removeAll();
             startingLevel.repaint();
             try { 
