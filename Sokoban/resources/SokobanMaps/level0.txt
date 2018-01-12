@@ -1,0 +1,13 @@
+8
+9
+6
+
+  XXXXX
+XXX   X
+X.@*  X
+XXX *.X
+X.XX* X
+X X . XX
+X*  **.X
+X   .  X
+XXXXXXXX
